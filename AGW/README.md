@@ -82,4 +82,6 @@ Please kindly cite this paper in your publications if it helps your research:
 
 [5] Zhang Y, Wang H. Diverse Embedding Expansion Network and Low-Light Cross-Modality Benchmark for Visible-Infrared Person Re-identification[J]. arXiv preprint arXiv:2303.14481, 2023.
 
-Contact: zhangyk@stu.xmu.edu.cn
+### 6. Contact
+
+If you have any question, please feel free to contact us. zhangyk@stu.xmu.edu.cn.
