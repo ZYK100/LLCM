@@ -69,7 +69,7 @@ elif dataset =='regdb':
     n_class = 206
     test_mode = [2, 1]
 elif dataset =='llcm':
-    data_path = './Dataset/LLCM_V1/'
+    data_path = './Dataset/LLCM/'
     n_class = 713
     test_mode = [1, 2] #[2, 1]: VIS to IR; [1, 2]: IR to VIS
 
