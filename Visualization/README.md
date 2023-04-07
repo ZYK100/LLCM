@@ -1,6 +1,4 @@
-### t-SNE
-
-Run
+### 1、t-SNE
 
 (1) Save the features in 'tsne.mat' by:
 ```
@@ -12,9 +10,7 @@ python extract.py --dataset llcm --method agw --gpu 0
 python tsne.py --dataset llcm --method agw --gpu 0
 ```
 
-### Ranking-10 list
-
-Run
+### 2、Ranking-10 list
 
 (1) Save the features in 'tsne.mat' by:
 ```
@@ -27,10 +23,7 @@ python ranking.py
 ```
 
 
-
-### Intra-Inter class distances
-
-Run
+### 3、Intra-Inter class distances
 
 (1) Save the features in 'tsne.mat' by:
 ```
