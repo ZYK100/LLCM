@@ -152,6 +152,7 @@ class TestData(data.Dataset):
         self.test_image = test_image
         self.test_label = test_label
         self.transform = transform
+        self.test_img_file = test_img_file
 
     def __getitem__(self, index):
         img1,  target1 = self.test_image[index],  self.test_label[index]
