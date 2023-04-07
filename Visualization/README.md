@@ -9,6 +9,7 @@ python extract.py --dataset llcm --method agw --gpu 0
 ```
 python tsne.py --dataset llcm --method agw --gpu 0
 ```
+![tsne](https://github.com/ZYK100/LLCM/blob/main/Visualization/imgs/tsne_0.jpg)
 
 ### 2、Ranking-10 list
 
@@ -21,6 +22,7 @@ python extract.py --dataset llcm --method agw --gpu 0
 ```
 python ranking.py
 ```
+![Ranking-10](https://github.com/ZYK100/LLCM/blob/main/Visualization/imgs/ranking.jpg)
 
 
 ### 3、Intra-Inter class distances
@@ -34,3 +36,4 @@ python extract.py --dataset llcm --method agw --gpu 0
 ```
 python intra_inter-distance.py
 ```
+![intra_inter-distance](https://github.com/ZYK100/LLCM/blob/main/Visualization/imgs/intra_inter.jpg)
