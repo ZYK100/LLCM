@@ -14,6 +14,10 @@ Please send a signed [dataset release agreement](https://github.com/ZYK100/LLCM/
 
 ### The code will be released soon.
 
+### Visualization
+
+![tsne](https://github.com/ZYK100/LLCM/blob/main/Visualization/imgs/tsne_0.jpg)
+
 ### Citation
 If you use the dataset, please cite the following paper:
 ```
