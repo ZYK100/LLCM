@@ -14,12 +14,12 @@ import torch.utils.data as data
 import cv2
 
 parser = argparse.ArgumentParser(description='Demo')
-parser.add_argument('--data_path',default='/media/data2/zyk/ACMMM23/LLCM/Dataset/LLCM_V1/',type=str, help='./test_data')
+parser.add_argument('--data_path',default='./Dataset/LLCM/',type=str, help='./test_data')
 parser.add_argument('--img_w', default=144, type=int, metavar='imgw', help='img width')
 parser.add_argument('--img_h', default=288, type=int, metavar='imgh', help='img height')
 args = parser.parse_args()
 
-data_path = '/media/data2/zyk/ACMMM23/LLCM/Dataset/LLCM_V1/'
+data_path = './Dataset/LLCM/'
 test_mode = [1, 2] #[2, 1]: VIS to IR; [1, 2]: IR to VIS
 
 #######################################################################
