@@ -22,13 +22,14 @@ Please send a signed [dataset release agreement](https://github.com/ZYK100/LLCM/
 ### Citation
 If you use the dataset, please cite the following paper:
 ```
-@misc{zhang2023diverse,
-      title={Diverse Embedding Expansion Network and Low-Light Cross-Modality Benchmark for Visible-Infrared Person Re-identification}, 
-      author={Yukang Zhang and Hanzi Wang},
-      year={2023},
-      eprint={2303.14481},
-      archivePrefix={arXiv}
-}
+@inproceedings{zhang2023diverse,
+    title={Diverse Embedding Expansion Network and Low-Light Cross-Modality Benchmark for Visible-Infrared Person Re-identification},
+    author={Yukang Zhang and Hanzi Wang},
+    booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2023},
+    pages={XXXX-XXXX},
+    doi={XXXX}
+  }
 ```
 
 ### Contact
