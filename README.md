@@ -1,4 +1,4 @@
-### Diverse Embedding Expansion Network and Low-Light Cross-Modality Benchmark for Visible-Infrared Person Re-identification
+#### Diverse Embedding Expansion Network and Low-Light Cross-Modality Benchmark for Visible-Infrared Person Re-identification
 
 [Paper](https://arxiv.org/abs/2303.14481) (CVPR 2023).
 
