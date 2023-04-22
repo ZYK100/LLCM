@@ -9,7 +9,7 @@ For the visible-infrared person re-identification (VIReID) task, one of the majo
 ![image](https://github.com/ZYK100/LLCM/blob/main/imgs/img1.png)
 
 ### Dataset download:
-Please send a signed [dataset release agreement](https://github.com/ZYK100/LLCM/blob/main/Agreement/LLCM%20DATASET%20RELEASE%20AGREEMENT.pdf) copy to zhangyk@stu.xmu.edu.cn. If your application is passed, we will send the download link of the dataset.
+Please send a signed [dataset release agreement](https://github.com/ZYK100/LLCM/blob/main/LLCM%20Dataset%20Agreement/LLCM%20DATASET%20RELEASE%20AGREEMENT.pdf) copy to zhangyk@stu.xmu.edu.cn. If your application is passed, we will send the download link of the dataset.
 
 ![image](https://github.com/ZYK100/LLCM/blob/main/imgs/img2.png)
 
