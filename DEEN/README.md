@@ -52,12 +52,15 @@ Both of these three datasets may have some fluctuation due to random spliting. T
 ### 5. Citation
 Please kindly cite this paper in your publications if it helps your research:
 
+Please kindly cite this paper in your publications if it helps your research:
+```
 @article{zhang2023diverse,
   title={Diverse Embedding Expansion Network and Low-Light Cross-Modality Benchmark for Visible-Infrared Person Re-identification},
   author={Zhang, Yukang and Wang, Hanzi},
   journal={arXiv preprint arXiv:2303.14481},
   year={2023}
 }
+```
 
 6. References.
 [1] M. Ye, J. Shen, G. Lin, T. Xiang, L. Shao, and S. C., Hoi. Deep learning for person re-identification: A survey and outlook. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2020.
