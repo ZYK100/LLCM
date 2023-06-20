@@ -50,7 +50,7 @@ Both of these three datasets may have some fluctuation due to random spliting. T
 
 
 
-|Model    | Rank@1   | Rank@10   | Rank@20   | mAP     | Rank@10   | Rank@10   | Rank@20   | mAP     |
+|Methods    | Rank@1   | Rank@10   | Rank@20   | mAP     | Rank@10   | Rank@10   | Rank@20   | mAP     |
 | --------   | -----    |  -----  | -----    |  -----  | -----    |  -----  | -----    |  -----  |
 |[DDAG](https://github.com/mangye16/DDAG)      | 42.36%  | 72.69% | 80.63%  | 48.97% | 51.42 %  | 81.45% | 88.26%  | 38.77% |
 |[LbA](https://github.com/cvlab-yonsei/LbA)  | 42.76%  | 77.40% | 86.11%  | 50.95% | 54.78%  | 85.12% | 91.63%  | 40.81% |
