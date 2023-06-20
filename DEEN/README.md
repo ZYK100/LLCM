@@ -49,10 +49,21 @@ python test.py --mode all --tvsearch True --resume 'model_path' --gpu 1 --datase
 Both of these three datasets may have some fluctuation due to random spliting. The results might be better by finetuning the hyper-parameters.
 
 
+
+|Model    | Rank@1   | Rank@10   | Rank@20   | mAP     | Rank@10   | Rank@10   | Rank@20   | mAP     |
+| --------   | -----    |  -----  |
+|DDAG[1]      | ~ 91.6%  | ~ 84.1% |
+|AGW[2]  | ~ 70.6%  | ~ 66.9% |
+|LbA[2]  | ~ 70.6%  | ~ 66.9% |
+|CAJ[2]  | ~ 70.6%  | ~ 66.9% |
+|DART[2]  | ~ 70.6%  | ~ 66.9% |
+|MMN[2]  | ~ 70.6%  | ~ 66.9% |
+
+
+
 ### 5. Citation
 Please kindly cite this paper in your publications if it helps your research:
 
-Please kindly cite this paper in your publications if it helps your research:
 ```
 @InProceedings{Zhang_2023_CVPR,
     author    = {Zhang, Yukang and Wang, Hanzi},
