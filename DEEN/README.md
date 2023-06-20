@@ -58,7 +58,8 @@ Please kindly cite this paper in your publications if it helps your research:
   journal={arXiv preprint arXiv:2303.14481},
   year={2023}
 }
-5. References.
+
+6. References.
 [1] M. Ye, J. Shen, G. Lin, T. Xiang, L. Shao, and S. C., Hoi. Deep learning for person re-identification: A survey and outlook. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2020.
 
 [2] M. Ye, X. Lan, Z. Wang, and P. C. Yuen. Bi-directional Center-Constrained Top-Ranking for Visible Thermal Person Re-Identification. IEEE Transactions on Information Forensics and Security (TIFS), 2019.
