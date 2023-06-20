@@ -172,14 +172,23 @@ if dataset == 'llcm':
         trial_gall_loader = data.DataLoader(trial_gallset, batch_size=args.test_batch, shuffle=False, num_workers=4)
 
         gall_feat_pool, gall_feat_fc = extract_gall_feat(trial_gall_loader)
+        if test_mode == [1, 2]:
+            # pool5 feature
+            distmat_pool = np.matmul(query_feat_pool, np.transpose(gall_feat_pool))
+            cmc_pool, mAP_pool, mINP_pool = eval_llcm(-distmat_pool, query_label, gall_label, query_cam, gall_cam)
+    
+            # fc feature
+            distmat = np.matmul(query_feat_fc, np.transpose(gall_feat_fc))
+            cmc, mAP, mINP = eval_llcm(-distmat, query_label, gall_label, query_cam, gall_cam)
+        else:
+            # pool5 feature
+            distmat_pool = np.matmul(gall_feat_pool, np.transpose(query_feat_pool))
+            cmc_pool, mAP_pool, mINP_pool = eval_llcm(-distmat_pool, gall_label, query_label, gall_cam, query_cam)
+    
+            # fc feature
+            distmat = np.matmul(gall_feat_fc, np.transpose(query_feat_fc))
+            cmc, mAP, mINP = eval_llcm(-distmat, gall_label, query_label, gall_cam, query_cam)
 
-        # pool5 feature
-        distmat_pool = np.matmul(query_feat_pool, np.transpose(gall_feat_pool))
-        cmc_pool, mAP_pool, mINP_pool = eval_llcm(-distmat_pool, query_label, gall_label, query_cam, gall_cam)
-
-        # fc feature
-        distmat = np.matmul(query_feat_fc, np.transpose(gall_feat_fc))
-        cmc, mAP, mINP = eval_llcm(-distmat, query_label, gall_label, query_cam, gall_cam)
         if trial == 0:
             all_cmc = cmc
             all_mAP = mAP
