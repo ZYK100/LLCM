@@ -51,7 +51,7 @@ Both of these three datasets may have some fluctuation due to random spliting. T
 
 
 |Model    | Rank@1   | Rank@10   | Rank@20   | mAP     | Rank@10   | Rank@10   | Rank@20   | mAP     |
-| --------   | -----    |  -----  |
+| --------   | -----    |  -----  | -----    |  -----  | -----    |  -----  | -----    |  -----  |
 |DDAG[1]      | ~ 91.6%  | ~ 84.1% |
 |AGW[2]  | ~ 70.6%  | ~ 66.9% |
 |LbA[2]  | ~ 70.6%  | ~ 66.9% |
