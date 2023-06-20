@@ -46,9 +46,7 @@ python test.py --mode all --tvsearch True --resume 'model_path' --gpu 1 --datase
 --gpu: which gpu to run.
 
 ### 4. Results.
-Both of these three datasets may have some fluctuation due to random spliting. The results might be better by finetuning the hyper-parameters.
-
-
+#### We have made some updates to the results in the our paper on the LLCM dataset. Please cite the results in the table below.
 
 |Methods    | Rank@1   | Rank@10   | Rank@20   | mAP     | Rank@10   | Rank@10   | Rank@20   | mAP     |
 | --------   | -----    |  -----  | -----    |  -----  | -----    |  -----  | -----    |  -----  |
@@ -60,6 +58,7 @@ Both of these three datasets may have some fluctuation due to random spliting. T
 |[DART](https://github.com/XLearning-SCU/2022-CVPR-DART)  | 52.97%  | 80.82% | 87.05%  | 59.28% | 65.33%  | 89.42% | 93.33%  | 51.13% |
 |DEEN (ours)  | 56.73%  | 84.52% | 90.60%  | 63.28% | 69.66%  | 91.68% | 95.99%  | 56.69% |
 
+The results may have some fluctuation due to random spliting and it might be better by finetuning the hyper-parameters.
 
 
 
