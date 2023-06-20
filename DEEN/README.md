@@ -21,8 +21,9 @@ Pytorch Code of DEEN method [1] for Cross-Modality Person Re-Identification (Vis
 
 ### 2. Training.
 Train a model by:
-
+```
 python train.py --dataset llcm --gpu 1
+```
 --dataset: which dataset "llcm", "sysu" or "regdb".
 
 --gpu: which gpu to run.
@@ -33,8 +34,9 @@ Parameters: More parameters can be found in the script.
 
 ### 3. Testing.
 Test a model on LLCM, SYSU-MM01 or RegDB dataset by
-
+```
 python test.py --mode all --tvsearch True --resume 'model_path' --gpu 1 --dataset llcm
+```
 --dataset: which dataset "llcm", "sysu" or "regdb".
 
 --mode: "all" or "indoor" all search or indoor search (only for sysu dataset).
