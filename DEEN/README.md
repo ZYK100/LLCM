@@ -54,16 +54,19 @@ Please kindly cite this paper in your publications if it helps your research:
 
 Please kindly cite this paper in your publications if it helps your research:
 ```
-@article{zhang2023diverse,
-  title={Diverse Embedding Expansion Network and Low-Light Cross-Modality Benchmark for Visible-Infrared Person Re-identification},
-  author={Zhang, Yukang and Wang, Hanzi},
-  journal={arXiv preprint arXiv:2303.14481},
-  year={2023}
+@InProceedings{Zhang_2023_CVPR,
+    author    = {Zhang, Yukang and Wang, Hanzi},
+    title     = {Diverse Embedding Expansion Network and Low-Light Cross-Modality Benchmark for Visible-Infrared Person Re-Identification},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {2153-2162}
 }
 ```
 
-6. References.
-[1] M. Ye, J. Shen, G. Lin, T. Xiang, L. Shao, and S. C., Hoi. Deep learning for person re-identification: A survey and outlook. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2020.
+###  5. References.
+
+[1] M. Ye, J. Shen, G. Lin, T. Xiang, L. Shao, and S. C., Hoi. 	Deep learning for person re-identification: A survey and outlook. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2020.
 
 [2] M. Ye, X. Lan, Z. Wang, and P. C. Yuen. Bi-directional Center-Constrained Top-Ranking for Visible Thermal Person Re-Identification. IEEE Transactions on Information Forensics and Security (TIFS), 2019.
 
@@ -73,5 +76,6 @@ Please kindly cite this paper in your publications if it helps your research:
 
 [5] Zhang Y, Wang H. Diverse Embedding Expansion Network and Low-Light Cross-Modality Benchmark for Visible-Infrared Person Re-identification[J]. arXiv preprint arXiv:2303.14481, 2023.
 
-6. Contact
+### 6. Contact
+
 If you have any question, please feel free to contact us. zhangyk@stu.xmu.edu.cn.
