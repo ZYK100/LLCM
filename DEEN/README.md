@@ -57,6 +57,7 @@ python test.py --mode all --tvsearch True --resume 'model_path' --gpu 1 --datase
 |[AGW](https://github.com/mangye16/Cross-Modal-Re-ID-baseline)  | 49.13%  | 79.06% | 85.89%  | 55.80% | 63.72%  | 88.66% | 92.83%  | 47.21% |
 |[CAJ](https://github.com/mangye16/Cross-Modal-Re-ID-baseline/tree/master/ICCV21_CAJ)  | 49.86%  | 78.91% | 85.83%  | 56.40% | 63.73%  | 87.95% | 92.41%  | 47.71% |
 |[MMN](https://github.com/ZYK100/MMN)  | 50.14%  | 79.81% | 87.27%  | 56.66% | 63.97%  | 88.66% | 93.05%  | 48.47% |
+|MRCN  | 51.32%  | 80.10% | 87.17%  | 57.74% | 65.27%  | 88.11% | 93.13%  | 49.45% |
 |[DART](https://github.com/XLearning-SCU/2022-CVPR-DART)  | 52.97%  | 80.82% | 87.05%  | 59.28% | 65.33%  | 89.42% | 93.33%  | 51.13% |
 |DEEN (ours)  | 56.73%  | 84.52% | 90.60%  | 63.28% | 69.66%  | 91.68% | 95.99%  | 56.69% |
 
