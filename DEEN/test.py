@@ -45,17 +45,17 @@ os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
 
 dataset = args.dataset
 if dataset == 'sysu':
-    data_path = '/media/data2/zyk/ACMMM23/MM2TIFS/Dataset/SYSU-384144/'
+    data_path = './Datasets/SYSU-MM01/'
     n_class = 395
     test_mode = [1, 2]
     pool_dim = 2048
 elif dataset =='regdb':
-    data_path = '/media/data2/zyk/CVPR1/Datasets/RegDB/'
+    data_path = './Datasets/RegDB/'
     n_class = 206
     test_mode = [2, 1]
     pool_dim = 1024
 elif dataset =='llcm':
-    data_path = '/media/data2/zyk/ACMMM23/MM2TIFS/Dataset/LLCM_V1/'
+    data_path = './Datasets/LLCM/'
     n_class = 713
     test_mode = [1, 2]  # [1, 2]: IR to VIS; [2, 1]: VIS to IR;
     pool_dim = 2048
