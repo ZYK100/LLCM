@@ -13,7 +13,21 @@ Please send a signed [dataset release agreement](https://github.com/ZYK100/LLCM/
 
 ![image](https://github.com/ZYK100/LLCM/blob/main/imgs/img2.png)
 
-### The code will be released soon.
+### Results.
+### We have made some updates to the results in the our paper on the LLCM dataset. Please cite the results in the table below.
+
+|Methods    | Rank@1   | Rank@10   | Rank@20   | mAP     | Rank@1   | Rank@10   | Rank@20   | mAP     |
+| --------   | -----    |  -----  | -----    |  -----  | -----    |  -----  | -----    |  -----  |
+|[DDAG](https://github.com/mangye16/DDAG)      | 42.36%  | 72.69% | 80.63%  | 48.97% | 51.42 %  | 81.45% | 88.26%  | 38.77% |
+|[LbA](https://github.com/cvlab-yonsei/LbA)  | 42.76%  | 77.40% | 86.11%  | 50.95% | 54.78%  | 85.12% | 91.63%  | 40.81% |
+|[AGW](https://github.com/mangye16/Cross-Modal-Re-ID-baseline)  | 49.13%  | 79.06% | 85.89%  | 55.80% | 63.72%  | 88.66% | 92.83%  | 47.21% |
+|[CAJ](https://github.com/mangye16/Cross-Modal-Re-ID-baseline/tree/master/ICCV21_CAJ)  | 49.86%  | 78.91% | 85.83%  | 56.40% | 63.73%  | 87.95% | 92.41%  | 47.71% |
+|[MMN](https://github.com/ZYK100/MMN)  | 50.14%  | 79.81% | 87.27%  | 56.66% | 63.97%  | 88.66% | 93.05%  | 48.47% |
+|MRCN  | 51.32%  | 80.10% | 87.17%  | 57.74% | 65.27%  | 88.11% | 93.13%  | 49.45% |
+|[DART](https://github.com/XLearning-SCU/2022-CVPR-DART)  | 52.97%  | 80.82% | 87.05%  | 59.28% | 65.33%  | 89.42% | 93.33%  | 51.13% |
+|DEEN (ours)  | 55.52%  | 83.88% | 89.98%  | 62.07% | 69.21%  | 90.95% | 95.07%  | 55.52% |
+
+The results may have some fluctuation due to random spliting and it might be better by finetuning the hyper-parameters.
 
 ### Visualization
 
