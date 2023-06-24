@@ -214,7 +214,7 @@ criterion_id = nn.CrossEntropyLoss()
 
 loader_batch = args.batch_size * args.num_pos
 criterion_tri= OriTripletLoss(batch_size=loader_batch, margin=args.margin)
-criterion_cpm= CPMLoss(batch_size=loader_batch, margin=0.2)
+criterion_cpm= CPMLoss(margin=0.2)
 
 criterion_id.to(device)
 criterion_tri.to(device)
