@@ -265,7 +265,6 @@ class embed_net(nn.Module):
             xps = xp.view(xp.size(0), xp.size(1), xp.size(2)).permute(0, 2, 1)
             xp1, xp2, xp3 = torch.chunk(xps, 3, 0)
             xpss = torch.cat((xp2, xp3), 1)
-            loss_ort = 
             loss_ort = torch.triu(torch.bmm(xpss, xpss.permute(0, 2, 1)), diagonal = 1).sum() / (xp.size(0))
 
             return x_pool, self.classifier(feat), loss_ort
