@@ -43,7 +43,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
 
 dataset = args.dataset
 if dataset == 'sysu':
-    data_path = './Dataset/SYSU-MM01/'
+    data_path = './Datasets/SYSU-MM01/'
     n_class = 395
     test_mode = [1, 2]
 elif dataset =='regdb':
@@ -51,7 +51,7 @@ elif dataset =='regdb':
     n_class = 206
     test_mode = [2, 1]
 elif dataset =='llcm':
-    data_path = './Dataset/LLCM/'
+    data_path = './Datasets/LLCM/'
     n_class = 713
     test_mode = [1, 2] #[2, 1]: VIS to IR; [1, 2]: IR to VIS
  
@@ -60,10 +60,7 @@ best_acc = 0  # best test accuracy
 start_epoch = 0 
 pool_dim = 2048
 print('==> Building model..')
-if args.method =='base':
-    net = embed_net(n_class, no_local= 'off', gm_pool =  'off', arch=args.arch)
-else:
-    net = embed_net(n_class, no_local= 'on', gm_pool = 'on', arch=args.arch)
+embed_net(n_class, dataset, arch=args.arch)
 net.to(device)    
 cudnn.benchmark = True
 
