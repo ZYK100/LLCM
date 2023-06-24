@@ -15,7 +15,7 @@ from data_manager import *
 from eval_metrics import eval_sysu, eval_regdb, eval_llcm
 from model import embed_net
 from utils import *
-from loss import OriTripletLoss, MDLoss, CPMLoss, cross_center_loss
+from loss import OriTripletLoss, CPMLoss
 from tensorboardX import SummaryWriter
 from random_erasing import RandomErasing
 
