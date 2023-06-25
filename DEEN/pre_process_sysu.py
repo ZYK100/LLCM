@@ -3,7 +3,7 @@ from PIL import Image
 import pdb
 import os
 
-data_path = '/media/data2/zyk/tpami/ICCV/SYSU-MM01/'
+data_path = './Datasets/SYSUMM01/'
 
 rgb_cameras = ['cam1','cam2','cam4','cam5']
 ir_cameras = ['cam3','cam6']
