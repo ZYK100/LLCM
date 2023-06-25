@@ -60,7 +60,7 @@ best_acc = 0  # best test accuracy
 start_epoch = 0 
 pool_dim = 2048
 print('==> Building model..')
-embed_net(n_class, dataset, arch=args.arch)
+net = embed_net(n_class, dataset, arch=args.arch)
 net.to(device)    
 cudnn.benchmark = True
 
