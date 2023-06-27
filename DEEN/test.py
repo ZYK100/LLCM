@@ -431,7 +431,6 @@ mAP8 = all_mAP8 / 10
 mINP8 = all_mINP8 / 10
 
 print('All Average:')
-print('Test Trial: {}'.format(trial))
 print('POOL:   Rank-1: {:.2%} | Rank-5: {:.2%} | Rank-10: {:.2%}| Rank-20: {:.2%}| mAP: {:.2%}| mINP: {:.2%}'.format(
     cmc7[0], cmc7[4], cmc7[9], cmc7[19], mAP7, mINP7))
 print('POOL:   Rank-1: {:.2%} | Rank-5: {:.2%} | Rank-10: {:.2%}| Rank-20: {:.2%}| mAP: {:.2%}| mINP: {:.2%}'.format(
