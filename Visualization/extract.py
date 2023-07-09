@@ -15,7 +15,7 @@ import pdb
 import scipy.io
 
 parser = argparse.ArgumentParser(description='PyTorch Cross-Modality Training')
-parser.add_argument('--dataset', default='sysu', help='dataset name: regdb or sysu]')
+parser.add_argument('--dataset', default='llcm', help='dataset name: regdb or sysu]')
 parser.add_argument('--lr', default=0.1 , type=float, help='learning rate, 0.00035 for adam')
 parser.add_argument('--optim', default='sgd', type=str, help='optimizer')
 parser.add_argument('--arch', default='resnet50', type=str, help='network baseline:resnet18 or resnet50')
