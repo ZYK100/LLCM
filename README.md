@@ -1,7 +1,7 @@
 ### Diverse Embedding Expansion Network and Low-Light Cross-Modality Benchmark for Visible-Infrared Person Re-identification
 Authors: [Yukang Zhang](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=Ma51U80AAAAJ), [Hanzi Wang*](https://scholar.google.com/citations?user=AmJaPdUAAAAJ&hl=zh-CN&oi=sra)
 
-[Paper](https://arxiv.org/abs/2303.14481) (CVPR 2023).
+[Paper]([https://arxiv.org/abs/2303.14481](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Diverse_Embedding_Expansion_Network_and_Low-Light_Cross-Modality_Benchmark_for_Visible-Infrared_CVPR_2023_paper.pdf)) (CVPR 2023).
 
 ### Abstract
 
