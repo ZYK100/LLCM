@@ -42,8 +42,8 @@ parser.add_argument('--trial', default=2, type=int, metavar='t', help='trial (on
 parser.add_argument('--seed', default=0, type=int, metavar='t', help='random seed')
 parser.add_argument('--gpu', default='3', type=str, help='gpu device ids for CUDA_VISIBLE_DEVICES')
 parser.add_argument('--mode', default='all', type=str, help='all or indoor')
-parser.add_argument('--lambda_1', default=0.8, type=float, help='learning rate, 0.00035 for adam')
-parser.add_argument('--lambda_2', default=0.01, type=float, help='learning rate, 0.00035 for adam')
+parser.add_argument('--lambda_1', default=0.8, type=float, help='lambda_1')
+parser.add_argument('--lambda_2', default=0.01, type=float, help='lambda_2')
 
 args = parser.parse_args()
 os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
