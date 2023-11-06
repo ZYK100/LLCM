@@ -271,8 +271,8 @@ def train(epoch):
 
     for batch_idx, (input1, input2, label1, label2) in enumerate(trainloader):
 
-        labs = torch.cat((label1, label1, label2, label2), 0)
-        labels = torch.cat((label1, label1, label1, label2, label2, label2), 0)
+        labs = torch.cat((label1, label2, label1, label2), 0)
+        labels = torch.cat((label1, label2, label1, label2, label1, label2), 0)
 
         input1 = Variable(input1.cuda())
         input2 = Variable(input2.cuda())
