@@ -205,7 +205,7 @@ if dataset == 'llcm':
         gall_feat1, gall_feat2, gall_feat3, gall_feat4, gall_feat5, gall_feat6 = extract_gall_feat(trial_gall_loader)
 
         # fc feature
-        if test_mode == [1, 2]:
+        if 1:
             distmat1 = np.matmul(query_feat1, np.transpose(gall_feat1))
             distmat2 = np.matmul(query_feat2, np.transpose(gall_feat2))
             distmat3 = np.matmul(query_feat3, np.transpose(gall_feat3))
@@ -219,19 +219,7 @@ if dataset == 'llcm':
             cmc7, mAP7, mINP7 = eval_llcm(-distmat7, query_label, gall_label, query_cam, gall_cam)
             cmc8, mAP8, mINP8 = eval_llcm(-distmat8, query_label, gall_label, query_cam, gall_cam)
 
-        else:
-            distmat1 = np.matmul(gall_feat1, np.transpose(query_feat1))
-            distmat2 = np.matmul(gall_feat2, np.transpose(query_feat2))
-            distmat3 = np.matmul(gall_feat3, np.transpose(query_feat3))
-            distmat4 = np.matmul(gall_feat4, np.transpose(query_feat4))
-            distmat5 = np.matmul(gall_feat5, np.transpose(query_feat5))
-            distmat6 = np.matmul(gall_feat6, np.transpose(query_feat6))
-            a = 0.1
-            distmat7 = distmat1 + distmat3 + distmat5 + distmat2 + distmat4 + distmat6
-            distmat8 = a * (distmat1 + distmat3 + distmat5) + (1 - a) * (distmat2 + distmat4 + distmat6)
-            
-            cmc7, mAP7, mINP7 = eval_llcm(-distmat7, gall_label, query_label, gall_cam, query_cam)
-            cmc8, mAP8, mINP8 = eval_llcm(-distmat8, gall_label, query_label, gall_cam, query_cam)
+
 
         if trial == 0:
             all_cmc7 = cmc7
