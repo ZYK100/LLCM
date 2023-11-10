@@ -249,7 +249,7 @@ if dataset == 'llcm':
 
             all_cmc8 = all_cmc8 + cmc8
             all_mAP8 = all_mAP8 + mAP8
-            all_mINP8 = all_mINP7 + mINP8
+            all_mINP8 = all_mINP8 + mINP8
 
 
         print('Test Trial: {}'.format(trial))
