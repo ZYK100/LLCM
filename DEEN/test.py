@@ -328,7 +328,7 @@ elif dataset == 'sysu':
 
             all_cmc8 = all_cmc8 + cmc8
             all_mAP8 = all_mAP8 + mAP8
-            all_mINP8 = all_mINP7 + mINP8
+            all_mINP8 = all_mINP8 + mINP8
 
 
         print('Test Trial: {}'.format(trial))
@@ -414,7 +414,7 @@ elif dataset == 'regdb':
 
             all_cmc8 = all_cmc8 + cmc8
             all_mAP8 = all_mAP8 + mAP8
-            all_mINP8 = all_mINP7 + mINP8
+            all_mINP8 = all_mINP8 + mINP8
 
         print('Test Trial: {}'.format(trial))
         print('POOL:   Rank-1: {:.2%} | Rank-5: {:.2%} | Rank-10: {:.2%}| Rank-20: {:.2%}| mAP: {:.2%}| mINP: {:.2%}'.format(
