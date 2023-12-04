@@ -141,6 +141,34 @@ def process_llcm(img_dir, mode = 1):
         
     return file_image, np.array(file_label), np.array(file_cam)
 
+
+def process_gallery_sysu(data_path, mode = 'all', trial = 0, relabel=False):
+    ir_cameras = ['cam1','cam2','cam4','cam5']
+    
+    file_path = os.path.join(data_path,'exp/test_id.txt')
+    files_rgb = []
+    files_ir = []
+
+    with open(file_path, 'r') as file:
+        ids = file.read().splitlines()
+        ids = [int(y) for y in ids[0].split(',')]
+        ids = ["%04d" % x for x in ids]
+
+    for id in sorted(ids):
+        for cam in ir_cameras:
+            img_dir = os.path.join(data_path,cam,id)
+            if os.path.isdir(img_dir):
+                new_files = sorted([img_dir+'/'+i for i in os.listdir(img_dir)])
+                files_ir.extend(new_files)
+    query_img = []
+    query_id = []
+    query_cam = []
+    for img_path in files_ir:
+        camid, pid = int(img_path[-15]), int(img_path[-13:-9])
+        query_img.append(img_path)
+        query_id.append(pid)
+        query_cam.append(camid)
+    return query_img, np.array(query_id), np.array(query_cam)
     
 if dataset == 'llcm':
 
@@ -181,6 +209,50 @@ if dataset == 'llcm':
 
     query_feat_pool, query_feat_fc = extract_query_feat(query_loader)
     gall_feat_pool, gall_feat_fc = extract_gall_feat(trial_gall_loader)
+
+    result = {'gallery_f':gall_feat_fc,'gallery_label':gall_label,'gallery_cam':gall_cam,'query_f':query_feat_fc,'query_label':query_label,'query_cam':query_cam}
+    scipy.io.savemat('tsne.mat',result)
+
+elif dataset == 'sysu':
+
+    print('==> Resuming from checkpoint..')
+    if len(args.resume) > 0:
+        model_path = checkpoint_path + args.resume
+        if os.path.isfile(model_path):
+            print('==> loading checkpoint {}'.format(args.resume))
+            checkpoint = torch.load(model_path)
+            net.load_state_dict(checkpoint['net'])
+            print('==> loaded checkpoint {} (epoch {})'
+                  .format(args.resume, checkpoint['epoch']))
+        else:
+            print('==> no checkpoint found at {}'.format(args.resume))
+
+    # testing set
+    query_img, query_label, query_cam = process_query_sysu(data_path, mode=args.mode)
+    gall_img, gall_label, gall_cam = process_gallery_sysu(data_path, mode=args.mode, trial=0)
+
+    nquery = len(query_label)
+    ngall = len(gall_label)
+    print("Dataset statistics:")
+    print("  ------------------------------")
+    print("  subset   | # ids | # images")
+    print("  ------------------------------")
+    print("  query    | {:5d} | {:8d}".format(len(np.unique(query_label)), nquery))
+    print("  gallery  | {:5d} | {:8d}".format(len(np.unique(gall_label)), ngall))
+    print("  ------------------------------")
+
+    queryset = TestData(query_img, query_label, transform=transform_test, img_size=(args.img_w, args.img_h))
+    query_loader = data.DataLoader(queryset, batch_size=args.test_batch, shuffle=False, num_workers=4)
+    gallset = TestData(gall_img, gall_label, transform=transform_test, img_size=(args.img_w, args.img_h))
+    gall_loader = data.DataLoader(gallset, batch_size=args.test_batch, shuffle=False, num_workers=args.workers)
+
+    print('Data Loading Time:\t {:.3f}'.format(time.time() - end))
+
+    query_feat_pool, query_feat_fc = extract_query_feat(query_loader)
+    gall_feat_pool, gall_feat_fc = extract_gall_feat(gall_loader)
+    
+    print(len(query_feat_fc), len(gall_feat_fc))
+    print(gall_cam)
 
     result = {'gallery_f':gall_feat_fc,'gallery_label':gall_label,'gallery_cam':gall_cam,'query_f':query_feat_fc,'query_label':query_label,'query_cam':query_cam}
     scipy.io.savemat('tsne.mat',result)
